@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="kiAutomationTestSuite" parallel="none">
+	<listeners>
+        <listener class-name="listeners.TestListeners"/>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+	<test name="KI Login Test" parallel ="false">
+		<classes>
+		    <class name="com.qa.testcases.LoginPageTest" />
+		    </classes>
+		    </test>
+		    <test name="" parallel ="false">
+		    <classes>
+		    <class name="com.qa.testcases.DatasetsPageTest" />
+		</classes>
+	</test>
+</suite>
